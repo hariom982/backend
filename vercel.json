@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/signup", "dest": "/api/signup.js" },
+      { "src": "/signin", "dest": "/api/signin.js" }
+    ]
+  }
+  
